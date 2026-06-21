@@ -293,149 +293,86 @@
 }
 
 /* ============================================================
-   STUDENT PANELS — side-by-side, clearly distinct per student
+   STUDENT CARDS — compact, photo-first, equal-height grid
    ============================================================ */
 .student-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem 0 2.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.2rem;
+  margin: 2rem 0 1.5rem;
 }
 
-.student-panel {
+.student-card {
   position: relative;
-  padding: 2rem 1.8rem 1.8rem;
-  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem 1.2rem 1.1rem;
+  border-radius: 14px;
   background: #ffffff;
   border: 1px solid rgba(28, 31, 36, 0.08);
-  box-shadow: 0 1px 2px rgba(28, 31, 36, 0.03), 0 8px 24px -18px rgba(28, 31, 36, 0.15);
+  box-shadow: 0 1px 2px rgba(28, 31, 36, 0.03), 0 6px 20px -16px rgba(28, 31, 36, 0.18);
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  min-height: 100%;
+  overflow: hidden;
 }
-.student-panel:hover {
+.student-card:hover {
   transform: translateY(-3px);
   border-color: rgba(28, 31, 36, 0.16);
-  box-shadow: 0 2px 4px rgba(28, 31, 36, 0.04), 0 18px 36px -18px rgba(28, 31, 36, 0.2);
+  box-shadow: 0 2px 4px rgba(28, 31, 36, 0.04), 0 16px 32px -16px rgba(28, 31, 36, 0.22);
 }
 
-.student-panel::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 3px;
-  border-radius: 12px 12px 0 0;
-  background: linear-gradient(90deg, var(--md-accent-fg-color), rgba(200, 16, 46, 0.4));
-}
-
-.student-header {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding-bottom: 1.2rem;
-  margin-bottom: 1.2rem;
-  border-bottom: 1px solid rgba(28, 31, 36, 0.06);
-}
-
-.student-monogram {
-  flex: 0 0 auto;
-  width: 52px;
-  height: 52px;
+/* Photo — square, sits at top center; falls back to a styled initial */
+.student-photo {
+  position: relative;
+  width: 84px;
+  height: 84px;
+  margin: 0.2rem auto 0.9rem;
   border-radius: 50%;
+  background-color: #f3f1ed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid rgba(28, 31, 36, 0.08);
+  box-shadow: inset 0 0 0 4px #ffffff, 0 4px 12px -6px rgba(28, 31, 36, 0.18);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: var(--md-accent-fg-color);
-  background: rgba(200, 16, 46, 0.08);
-  border: 1px solid rgba(200, 16, 46, 0.2);
+  font-family: "Inter", -apple-system, system-ui, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: rgba(28, 31, 36, 0.45);
   letter-spacing: -0.02em;
 }
-
-.student-name {
+/* Show the Korean initial only when no photo is loaded — handled by ::after
+   that reads the data-initial attribute and sits *behind* the photo */
+.student-photo::after {
+  content: attr(data-initial);
+  position: absolute;
+  inset: 0;
   display: flex;
-  flex-direction: column;
-  min-width: 0;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
 }
 
-.student-name h4 {
-  margin: 0 0 0.25rem;
-  font-size: 1.1rem;
-  font-weight: 700;
-  letter-spacing: -0.01em;
-  color: var(--md-default-fg-color);
-  line-height: 1.2;
+/* Meta block — program badge, name, topic */
+.student-meta {
+  text-align: center;
+  margin-bottom: 0.9rem;
 }
 
 .student-program {
   display: inline-block;
-  margin-left: 0.4rem;
-  padding: 0.1rem 0.5rem;
+  padding: 0.16rem 0.6rem;
   border-radius: 999px;
   font-size: 0.6rem;
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   background: rgba(200, 16, 46, 0.08);
   color: var(--md-accent-fg-color);
-  vertical-align: middle;
+  margin-bottom: 0.55rem;
 }
-
-.student-topic {
-  font-size: 0.82rem;
-  color: var(--md-default-fg-color--light);
-  font-weight: 500;
-  line-height: 1.3;
-}
-
-.student-panel p,
-.student-panel ul,
-.student-panel ol {
-  font-size: 0.82rem;
-  line-height: 1.6;
-  color: var(--md-default-fg-color);
-}
-.student-panel p strong {
-  display: inline-block;
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--md-default-fg-color--lighter);
-  margin-top: 0.4rem;
-}
-.student-panel p + p { margin-top: 0.6rem; }
-.student-panel code {
-  background: rgba(28, 31, 36, 0.05);
-  color: var(--md-default-fg-color);
-  border: none;
-  padding: 0.12rem 0.45rem;
-  border-radius: 4px;
-  font-size: 0.78rem;
-}
-.student-panel ul { padding-left: 1.1rem; }
-.student-panel ul li { margin-bottom: 0.3rem; }
-
-/* Make Google Scholar links inside student panels look like inline chips */
-.student-panel ul li a {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.25rem;
-  text-decoration: none;
-  color: var(--md-default-fg-color);
-  border-bottom: 1px dashed rgba(28, 31, 36, 0.25);
-  transition: color 0.15s ease, border-color 0.15s ease;
-}
-.student-panel ul li a:hover {
-  color: var(--md-accent-fg-color);
-  border-bottom-color: var(--md-accent-fg-color);
-}
-.student-panel ul li a code {
-  background: transparent;
-  padding: 0;
-  font-size: 0.78rem;
-}
-
-/* ----- Program badge color variants ----- */
 .student-program.intern {
   background: rgba(31, 99, 168, 0.10);
   color: #1f63a8;
@@ -445,89 +382,149 @@
   color: #7a5aa8;
 }
 
-/* ----- Placeholder panels (not-yet-onboarded interns) ----- */
-.student-panel.placeholder {
-  background: #fafaf9;
+h4.student-name {
+  margin: 0 0 0.3rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--md-default-fg-color);
+  line-height: 1.2;
+}
+
+.student-card .student-topic {
+  margin: 0;
+  font-size: 0.74rem;
+  color: var(--md-default-fg-color--light);
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.student-card .student-summary {
+  margin: 0 0 0.85rem;
+  font-size: 0.76rem;
+  line-height: 1.5;
+  color: var(--md-default-fg-color--light);
+  padding-top: 0.85rem;
+  border-top: 1px solid rgba(28, 31, 36, 0.06);
+}
+
+/* Keyword chip grid — 2 columns, tight, scannable */
+.kw-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+.kw-chip {
+  display: block;
+  padding: 0.4rem 0.55rem;
+  border-radius: 6px;
+  background: rgba(28, 31, 36, 0.04);
+  border: 1px solid rgba(28, 31, 36, 0.06);
+  font-size: 0.68rem;
+  font-weight: 500;
+  color: var(--md-default-fg-color--light);
+  text-decoration: none !important;
+  text-align: center;
+  line-height: 1.25;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.kw-chip:hover {
+  background: rgba(200, 16, 46, 0.06);
+  border-color: rgba(200, 16, 46, 0.25);
+  color: var(--md-accent-fg-color);
+}
+
+/* Workspace button — proper button, "COMING SOON" status chip */
+.ws-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding: 0.6rem 0.85rem;
+  border-radius: 8px;
+  background: var(--md-default-fg-color);
+  color: #ffffff !important;
+  border: 1px solid var(--md-default-fg-color);
+  text-decoration: none !important;
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+.ws-btn:hover {
+  background: var(--md-accent-fg-color);
+  border-color: var(--md-accent-fg-color);
+}
+.ws-btn .ws-label { letter-spacing: 0.06em; }
+.ws-btn .ws-status {
+  display: inline-block;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+  color: #ffffff;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+.ws-btn.coming-soon { opacity: 0.92; }
+.ws-btn.coming-soon:hover { opacity: 1; }
+
+/* Placeholder card variant — lighter, no big content block */
+.student-card.placeholder {
+  background: #fbfaf8;
   border-style: dashed;
   border-color: rgba(28, 31, 36, 0.14);
   box-shadow: none;
 }
-.student-panel.placeholder:hover {
-  transform: none;
-  border-color: rgba(28, 31, 36, 0.20);
-  box-shadow: none;
+.student-card.placeholder:hover {
+  transform: translateY(-2px);
+  border-color: rgba(28, 31, 36, 0.22);
+  box-shadow: 0 8px 20px -14px rgba(28, 31, 36, 0.15);
 }
-.student-panel.placeholder::before {
-  background: linear-gradient(90deg, rgba(28, 31, 36, 0.18), rgba(28, 31, 36, 0.04));
+.student-card.placeholder .student-photo {
+  background-color: rgba(28, 31, 36, 0.04);
+  color: rgba(28, 31, 36, 0.32);
 }
-.student-monogram.placeholder-mono {
-  background: rgba(28, 31, 36, 0.05);
-  color: var(--md-default-fg-color--lighter);
-  border-color: rgba(28, 31, 36, 0.12);
+.student-card.placeholder .ws-btn {
+  background: transparent;
+  color: var(--md-default-fg-color) !important;
+  border-color: rgba(28, 31, 36, 0.15);
 }
-.placeholder-note {
-  font-size: 0.78rem !important;
+.student-card.placeholder .ws-btn .ws-status {
+  background: rgba(28, 31, 36, 0.08);
   color: var(--md-default-fg-color--light);
-  font-style: italic;
-  margin: 0.4rem 0 1rem !important;
+}
+.student-card.placeholder .ws-btn:hover {
+  background: var(--md-default-fg-color);
+  color: #ffffff !important;
+  border-color: var(--md-default-fg-color);
+}
+.student-card.placeholder .ws-btn:hover .ws-status {
+  background: rgba(255, 255, 255, 0.16);
+  color: #ffffff;
 }
 
-/* ============================================================
-   STUDENT WORKSPACE BUTTON — bottom of each panel
-   ============================================================ */
-.student-workspace-btn {
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
-  margin-top: 1.4rem;
-  padding: 0.75rem 1rem;
-  border-radius: 8px;
-  background: rgba(28, 31, 36, 0.03);
-  border: 1px solid rgba(28, 31, 36, 0.10);
-  color: var(--md-default-fg-color);
-  text-decoration: none !important;
-  font-size: 0.82rem;
-  font-weight: 500;
-  transition: all 0.18s ease;
-  cursor: pointer;
+/* Small note under the student grid */
+.student-note {
+  font-size: 0.72rem;
+  color: var(--md-default-fg-color--lighter);
+  text-align: center;
+  margin: 0.5rem 0 2rem;
+  font-style: italic;
 }
-.student-workspace-btn:hover {
-  background: rgba(28, 31, 36, 0.06);
-  border-color: rgba(28, 31, 36, 0.2);
-  transform: translateY(-1px);
-}
-.student-workspace-btn .ws-icon {
-  display: inline-flex;
-  align-items: center;
-  font-size: 1.05rem;
-  color: var(--md-default-fg-color--light);
-}
-.student-workspace-btn .ws-icon svg,
-.student-workspace-btn .ws-icon .twemoji svg {
-  width: 1.1rem;
-  height: 1.1rem;
-  fill: currentColor;
-}
-.student-workspace-btn .ws-label {
-  flex: 1;
-}
-.student-workspace-btn .ws-status {
-  font-size: 0.66rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  padding: 0.18rem 0.55rem;
-  border-radius: 999px;
-  background: rgba(200, 16, 46, 0.08);
-  color: var(--md-accent-fg-color);
-  border: 1px solid rgba(200, 16, 46, 0.18);
-}
-.student-workspace-btn.coming-soon {
-  cursor: not-allowed;
-  opacity: 0.85;
-}
-.student-workspace-btn.coming-soon:hover {
-  opacity: 1;
+.student-note code {
+  background: rgba(28, 31, 36, 0.05);
+  padding: 0.05rem 0.3rem;
+  border-radius: 3px;
+  font-style: normal;
+  font-size: 0.7rem;
 }
 
 /* ============================================================

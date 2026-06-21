@@ -54,171 +54,116 @@ Below is what to prepare <strong>before our first meeting on Wednesday afternoon
 각자에게 배정된 주제와 관련된 **배경 논문을 직접 찾아서 3–5편** 빠르게 훑어 읽기.
 다 이해할 필요 없음 — "이 분야에서 뭐가 알려져 있고 뭐가 모르는지"만 잡으면 됨.
 
-<div class="student-grid" markdown>
+<div class="student-grid">
 
-<div class="student-panel" markdown>
-
-<div class="student-header">
-  <div class="student-monogram">박</div>
-  <div class="student-name">
-    <h4>박창익 <span class="student-program">G-SURF</span></h4>
-    <div class="student-topic">Brown Ocean Effect</div>
+<article class="student-card">
+  <div class="student-photo" style="background-image: url('../assets/students/dowon-lee.jpg')" data-initial="이"></div>
+  <div class="student-meta">
+    <span class="student-program">G-SURF</span>
+    <h4 class="student-name">이도원</h4>
+    <p class="student-topic">GNSS-R 기반 토양수분 (CYGNSS)</p>
   </div>
-</div>
-
-**주제 한 줄 요약**
-
-열대저기압(태풍·허리케인)이 육지에 상륙한 후에도 약해지지 않거나
-오히려 강해지는 현상. 젖은 토양이 마치 바다처럼 수증기를 공급해서
-발생한다고 알려져 있음.
-
-**검색 키워드** (Google Scholar 클릭해서 바로 검색)
-
-- [`brown ocean effect`](https://scholar.google.com/scholar?q=brown+ocean+effect)
-- [`tropical cyclone landfall soil moisture`](https://scholar.google.com/scholar?q=tropical+cyclone+landfall+soil+moisture)
-- [`post-landfall TC intensification`](https://scholar.google.com/scholar?q=post-landfall+TC+intensification)
-- [`SMAP tropical cyclone`](https://scholar.google.com/scholar?q=SMAP+tropical+cyclone)
-
-<a class="student-workspace-btn coming-soon" href="#" onclick="event.preventDefault(); alert('Workspace coming soon — 곧 공개됩니다.');">
-  <span class="ws-icon">:material-folder-account-outline:</span>
-  <span class="ws-label">My Workspace</span>
-  <span class="ws-status">Coming soon</span>
-</a>
-
-</div>
-
-<div class="student-panel" markdown>
-
-<div class="student-header">
-  <div class="student-monogram">이</div>
-  <div class="student-name">
-    <h4>이도원 <span class="student-program">G-SURF</span></h4>
-    <div class="student-topic">GNSS-R 기반 토양수분 (CYGNSS)</div>
+  <p class="student-summary">SMAP·ASCAT·AMSR2의 토양수분 산출을 GNSS-R 위성(CYGNSS)이 대체할 수 있는가.</p>
+  <div class="kw-grid">
+    <a class="kw-chip" href="https://scholar.google.com/scholar?q=CYGNSS+soil+moisture" target="_blank" rel="noopener">CYGNSS soil moisture</a>
+    <a class="kw-chip" href="https://scholar.google.com/scholar?q=GNSS-R+soil+moisture+retrieval" target="_blank" rel="noopener">GNSS-R retrieval</a>
+    <a class="kw-chip" href="https://scholar.google.com/scholar?q=CYGNSS+SMAP+comparison" target="_blank" rel="noopener">CYGNSS vs SMAP</a>
+    <a class="kw-chip" href="https://scholar.google.com/scholar?q=passive+microwave+soil+moisture+intercomparison" target="_blank" rel="noopener">PMW intercomparison</a>
   </div>
-</div>
+  <a class="ws-btn coming-soon" href="#" onclick="event.preventDefault(); alert('Workspace coming soon — 곧 공개됩니다.');">
+    <span class="ws-label">Workspace</span>
+    <span class="ws-status">Soon</span>
+  </a>
+</article>
 
-**주제 한 줄 요약**
-
-기존 마이크로파 위성(SMAP, ASCAT, AMSR2)의 토양수분 산출을
-**GNSS-R 기반 위성(CYGNSS)**이 대체할 수 있을까?
-성능·공간해상도·시간해상도·관측 가능 지역 측면에서 비교.
-
-**검색 키워드** (Google Scholar 클릭해서 바로 검색)
-
-- [`CYGNSS soil moisture`](https://scholar.google.com/scholar?q=CYGNSS+soil+moisture)
-- [`GNSS-R soil moisture retrieval`](https://scholar.google.com/scholar?q=GNSS-R+soil+moisture+retrieval)
-- [`CYGNSS SMAP comparison`](https://scholar.google.com/scholar?q=CYGNSS+SMAP+comparison)
-- [`passive microwave soil moisture intercomparison`](https://scholar.google.com/scholar?q=passive+microwave+soil+moisture+intercomparison)
-
-<a class="student-workspace-btn coming-soon" href="#" onclick="event.preventDefault(); alert('Workspace coming soon — 곧 공개됩니다.');">
-  <span class="ws-icon">:material-folder-account-outline:</span>
-  <span class="ws-label">My Workspace</span>
-  <span class="ws-status">Coming soon</span>
-</a>
-
-</div>
-
-<div class="student-panel placeholder" markdown>
-
-<div class="student-header">
-  <div class="student-monogram placeholder-mono">김</div>
-  <div class="student-name">
-    <h4>김주현 <span class="student-program intern">인턴</span></h4>
-    <div class="student-topic">주제 미정 — 합류 시 업데이트</div>
+<article class="student-card">
+  <div class="student-photo" style="background-image: url('../assets/students/changik-park.jpg')" data-initial="박"></div>
+  <div class="student-meta">
+    <span class="student-program">G-SURF</span>
+    <h4 class="student-name">박창익</h4>
+    <p class="student-topic">Brown Ocean Effect</p>
   </div>
-</div>
-
-<p class="placeholder-note">GIST Summer Internship으로 합류 예정. 시작일·연구 주제는 추후 안내됩니다.</p>
-
-<a class="student-workspace-btn coming-soon" href="#" onclick="event.preventDefault(); alert('Workspace coming soon — 곧 공개됩니다.');">
-  <span class="ws-icon">:material-folder-account-outline:</span>
-  <span class="ws-label">My Workspace</span>
-  <span class="ws-status">Coming soon</span>
-</a>
-
-</div>
-
-<div class="student-panel placeholder" markdown>
-
-<div class="student-header">
-  <div class="student-monogram placeholder-mono">조</div>
-  <div class="student-name">
-    <h4>조현 <span class="student-program intern">인턴</span></h4>
-    <div class="student-topic">주제 미정 — 합류 시 업데이트</div>
+  <p class="student-summary">열대저기압이 상륙 후에도 약해지지 않는 현상 — 젖은 토양의 역할.</p>
+  <div class="kw-grid">
+    <a class="kw-chip" href="https://scholar.google.com/scholar?q=brown+ocean+effect" target="_blank" rel="noopener">brown ocean effect</a>
+    <a class="kw-chip" href="https://scholar.google.com/scholar?q=tropical+cyclone+landfall+soil+moisture" target="_blank" rel="noopener">TC landfall × SM</a>
+    <a class="kw-chip" href="https://scholar.google.com/scholar?q=post-landfall+TC+intensification" target="_blank" rel="noopener">post-landfall TC</a>
+    <a class="kw-chip" href="https://scholar.google.com/scholar?q=SMAP+tropical+cyclone" target="_blank" rel="noopener">SMAP TC</a>
   </div>
-</div>
+  <a class="ws-btn coming-soon" href="#" onclick="event.preventDefault(); alert('Workspace coming soon — 곧 공개됩니다.');">
+    <span class="ws-label">Workspace</span>
+    <span class="ws-status">Soon</span>
+  </a>
+</article>
 
-<p class="placeholder-note">GIST Summer Internship으로 합류 예정.</p>
-
-<a class="student-workspace-btn coming-soon" href="#" onclick="event.preventDefault(); alert('Workspace coming soon — 곧 공개됩니다.');">
-  <span class="ws-icon">:material-folder-account-outline:</span>
-  <span class="ws-label">My Workspace</span>
-  <span class="ws-status">Coming soon</span>
-</a>
-
-</div>
-
-<div class="student-panel placeholder" markdown>
-
-<div class="student-header">
-  <div class="student-monogram placeholder-mono">권</div>
-  <div class="student-name">
-    <h4>권진 <span class="student-program intern">인턴</span></h4>
-    <div class="student-topic">주제 미정 — 합류 시 업데이트</div>
+<article class="student-card placeholder">
+  <div class="student-photo" style="background-image: url('../assets/students/juhyeon-kim.jpg')" data-initial="김"></div>
+  <div class="student-meta">
+    <span class="student-program intern">인턴</span>
+    <h4 class="student-name">김주현</h4>
+    <p class="student-topic">주제 미정 — 합류 시 업데이트</p>
   </div>
-</div>
+  <a class="ws-btn coming-soon" href="#" onclick="event.preventDefault(); alert('Workspace coming soon — 곧 공개됩니다.');">
+    <span class="ws-label">Workspace</span>
+    <span class="ws-status">Soon</span>
+  </a>
+</article>
 
-<p class="placeholder-note">GIST Summer Internship으로 합류 예정.</p>
-
-<a class="student-workspace-btn coming-soon" href="#" onclick="event.preventDefault(); alert('Workspace coming soon — 곧 공개됩니다.');">
-  <span class="ws-icon">:material-folder-account-outline:</span>
-  <span class="ws-label">My Workspace</span>
-  <span class="ws-status">Coming soon</span>
-</a>
-
-</div>
-
-<div class="student-panel placeholder" markdown>
-
-<div class="student-header">
-  <div class="student-monogram placeholder-mono">신</div>
-  <div class="student-name">
-    <h4>신준영 <span class="student-program newstudent">신입학</span></h4>
-    <div class="student-topic">주제 미정 — 합류 시 업데이트</div>
+<article class="student-card placeholder">
+  <div class="student-photo" style="background-image: url('../assets/students/hyun-cho.jpg')" data-initial="조"></div>
+  <div class="student-meta">
+    <span class="student-program intern">인턴</span>
+    <h4 class="student-name">조현</h4>
+    <p class="student-topic">주제 미정 — 합류 시 업데이트</p>
   </div>
-</div>
+  <a class="ws-btn coming-soon" href="#" onclick="event.preventDefault(); alert('Workspace coming soon — 곧 공개됩니다.');">
+    <span class="ws-label">Workspace</span>
+    <span class="ws-status">Soon</span>
+  </a>
+</article>
 
-<p class="placeholder-note">신입학생으로 합류 예정. 입학 후 시작일 안내.</p>
-
-<a class="student-workspace-btn coming-soon" href="#" onclick="event.preventDefault(); alert('Workspace coming soon — 곧 공개됩니다.');">
-  <span class="ws-icon">:material-folder-account-outline:</span>
-  <span class="ws-label">My Workspace</span>
-  <span class="ws-status">Coming soon</span>
-</a>
-
-</div>
-
-<div class="student-panel placeholder" markdown>
-
-<div class="student-header">
-  <div class="student-monogram placeholder-mono">전</div>
-  <div class="student-name">
-    <h4>전하정 <span class="student-program newstudent">신입학</span></h4>
-    <div class="student-topic">주제 미정 — 합류 시 업데이트</div>
+<article class="student-card placeholder">
+  <div class="student-photo" style="background-image: url('../assets/students/jin-kwon.jpg')" data-initial="권"></div>
+  <div class="student-meta">
+    <span class="student-program intern">인턴</span>
+    <h4 class="student-name">권진</h4>
+    <p class="student-topic">주제 미정 — 합류 시 업데이트</p>
   </div>
+  <a class="ws-btn coming-soon" href="#" onclick="event.preventDefault(); alert('Workspace coming soon — 곧 공개됩니다.');">
+    <span class="ws-label">Workspace</span>
+    <span class="ws-status">Soon</span>
+  </a>
+</article>
+
+<article class="student-card placeholder">
+  <div class="student-photo" style="background-image: url('../assets/students/junyoung-shin.jpg')" data-initial="신"></div>
+  <div class="student-meta">
+    <span class="student-program newstudent">신입학</span>
+    <h4 class="student-name">신준영</h4>
+    <p class="student-topic">주제 미정 — 합류 시 업데이트</p>
+  </div>
+  <a class="ws-btn coming-soon" href="#" onclick="event.preventDefault(); alert('Workspace coming soon — 곧 공개됩니다.');">
+    <span class="ws-label">Workspace</span>
+    <span class="ws-status">Soon</span>
+  </a>
+</article>
+
+<article class="student-card placeholder">
+  <div class="student-photo" style="background-image: url('../assets/students/hajeong-jeon.jpg')" data-initial="전"></div>
+  <div class="student-meta">
+    <span class="student-program newstudent">신입학</span>
+    <h4 class="student-name">전하정</h4>
+    <p class="student-topic">주제 미정 — 합류 시 업데이트</p>
+  </div>
+  <a class="ws-btn coming-soon" href="#" onclick="event.preventDefault(); alert('Workspace coming soon — 곧 공개됩니다.');">
+    <span class="ws-label">Workspace</span>
+    <span class="ws-status">Soon</span>
+  </a>
+</article>
+
 </div>
 
-<p class="placeholder-note">신입학생으로 합류 예정. 입학 후 시작일 안내.</p>
-
-<a class="student-workspace-btn coming-soon" href="#" onclick="event.preventDefault(); alert('Workspace coming soon — 곧 공개됩니다.');">
-  <span class="ws-icon">:material-folder-account-outline:</span>
-  <span class="ws-label">My Workspace</span>
-  <span class="ws-status">Coming soon</span>
-</a>
-
-</div>
-
-</div>
+<p class="student-note">사진을 추가하려면 <code>docs/assets/students/</code>에 위 카드 순서대로 <code>(이름).jpg</code> 파일을 넣으세요. 없으면 자동으로 이니셜이 보입니다.</p>
 
 !!! tip "논문 찾기 → 읽기 전에 꼭 거쳐야 할 단계"
     Google Scholar에서 논문 리스트가 우수수 나옵니다. **무작정 위에서부터
