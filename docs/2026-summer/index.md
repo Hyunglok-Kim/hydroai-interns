@@ -45,13 +45,8 @@ Below is what to prepare <strong>before our first meeting on Wednesday afternoon
 
 ### :material-numeric-1-circle-outline: 연구 주제 이해하기 (반나절)
 
-각자에게 배정된 주제의 **배경 논문 3–5편**을 빠르게 훑어 읽기.
+각자에게 배정된 주제와 관련된 **배경 논문을 직접 찾아서 3–5편** 빠르게 훑어 읽기.
 다 이해할 필요 없음 — "이 분야에서 뭐가 알려져 있고 뭐가 모르는지"만 잡으면 됨.
-
-!!! tip "선배에게 먼저 물어보기"
-    어떤 논문부터 보면 좋은지, 어떤 자료/툴을 쓰면 좋은지
-    **연구실 선배들에게 꼭 먼저 의논**해 보세요. 같은 영역을 다뤄본 선배의
-    한 마디가 논문 5편 읽는 것보다 빠를 때가 많습니다.
 
 === ":material-weather-pouring: 박창익 — Brown Ocean Effect"
 
@@ -60,12 +55,12 @@ Below is what to prepare <strong>before our first meeting on Wednesday afternoon
       오히려 강해지는 현상. 젖은 토양이 마치 바다처럼 수증기를 공급해서
       발생한다고 알려져 있음.
 
-    **읽어볼 출발점**
+    **검색 키워드 예시 (Google Scholar에서 본인이 직접 찾기)**
 
-    - Andersen & Shepherd (2014), *Sustained convection in tropical cyclones over land* — Brown Ocean의 고전
-    - Kishtawal et al. (2012) — TC 상륙 후 강도 변화 분석
-    - 최근 SMAP 데이터를 활용한 연구 (Google Scholar에서 "brown ocean effect SMAP" 검색)
-    - 연구실 폴더 `2026_summer/brown_ocean_effect/brown_ocean_pipeline.md` — 교수님이 미리 정리해둔 파이프라인 스케치 (공유 드라이브에서 열어보기)
+    - `brown ocean effect`
+    - `tropical cyclone landfall soil moisture`
+    - `post-landfall TC intensification`
+    - `SMAP tropical cyclone`
 
 === ":material-satellite-variant: 이도원 — GNSS-R 기반 토양수분 (CYGNSS)"
 
@@ -74,14 +69,28 @@ Below is what to prepare <strong>before our first meeting on Wednesday afternoon
       **GNSS-R 기반 위성(CYGNSS)**이 대체할 수 있을까?
       성능·공간해상도·시간해상도·관측 가능 지역 측면에서 비교.
 
-    **읽어볼 출발점**
+    **검색 키워드 예시 (Google Scholar에서 본인이 직접 찾기)**
 
-    - Chew & Small (2018, 2020) — CYGNSS 토양수분 산출 알고리즘 (대표 논문)
-    - Kim & Lakshmi (2018) — CYGNSS와 SMAP 비교
-    - Eroglu et al. (2019) — Machine learning 기반 CYGNSS 토양수분
-    - NASA CYGNSS 미션 페이지 — <https://www.nasa.gov/cygnss/>
-    - SMAP, ASCAT, AMSR2 토양수분 산출 원리 정리 자료 (Petropoulos et al. 리뷰)
-    - Google Scholar 검색어: `"CYGNSS soil moisture"`, `"GNSS-R soil moisture SMAP"`
+    - `CYGNSS soil moisture`
+    - `GNSS-R soil moisture retrieval`
+    - `CYGNSS SMAP comparison`
+    - `passive microwave soil moisture intercomparison`
+
+!!! tip "논문 찾기 → 읽기 전에 꼭 거쳐야 할 단계"
+    Google Scholar에서 논문 리스트가 우수수 나옵니다. **무작정 위에서부터
+    읽지 마세요.** 어떤 논문이 "좋은 논문"인지 — 인용 수, 저널 수준, 저자
+    그룹, 게재 연도 등 — 평가하는 기준을 먼저 익혀야 시간 낭비를 막을 수
+    있습니다.
+
+    **김수빈 선배에게 "논문 퀄리티는 어떻게 판단하나요?" 직접 물어보세요.**
+    선배가 본인이 쓰는 기준을 알려줄 거예요. 그 기준으로 필터링한 다음
+    3–5편을 골라 읽으세요.
+
+!!! abstract "왜 검색부터 본인이 하나요?"
+    연구자에게 가장 중요한 능력 중 하나가 **"내 질문에 답해 줄 자료를
+    스스로 찾는 능력"**입니다. 추천 리스트를 받아 읽는 것보다, 직접
+    검색해보고 → 평가 기준으로 거르고 → 가장 좋은 걸 골라내는 과정을
+    초반부터 연습하는 게 여름 인턴십에서 가장 남는 것 중 하나예요.
 
 ### :material-numeric-2-circle-outline: 한 페이지 정리 (1~2시간)
 
