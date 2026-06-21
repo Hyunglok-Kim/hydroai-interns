@@ -85,6 +85,7 @@ plugins:
 
 extra:
   generator: false
+  homepage: https://hydroai.net
   social:
     - icon: fontawesome/solid/globe
       link: https://www.gist.ac.kr
