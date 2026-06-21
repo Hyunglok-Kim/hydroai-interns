@@ -48,33 +48,59 @@ Below is what to prepare <strong>before our first meeting on Wednesday afternoon
 각자에게 배정된 주제와 관련된 **배경 논문을 직접 찾아서 3–5편** 빠르게 훑어 읽기.
 다 이해할 필요 없음 — "이 분야에서 뭐가 알려져 있고 뭐가 모르는지"만 잡으면 됨.
 
-=== ":material-weather-pouring: 박창익 — Brown Ocean Effect"
+<div class="student-grid" markdown>
 
-    **주제 한 줄 요약**
-    : 열대저기압(태풍·허리케인)이 육지에 상륙한 후에도 약해지지 않거나
-      오히려 강해지는 현상. 젖은 토양이 마치 바다처럼 수증기를 공급해서
-      발생한다고 알려져 있음.
+<div class="student-panel" markdown>
 
-    **검색 키워드 예시 (Google Scholar에서 본인이 직접 찾기)**
+<div class="student-header">
+  <div class="student-monogram">박</div>
+  <div class="student-name">
+    <h4>박창익 <span class="student-program">G-SURF</span></h4>
+    <div class="student-topic">Brown Ocean Effect</div>
+  </div>
+</div>
 
-    - `brown ocean effect`
-    - `tropical cyclone landfall soil moisture`
-    - `post-landfall TC intensification`
-    - `SMAP tropical cyclone`
+**주제 한 줄 요약**
 
-=== ":material-satellite-variant: 이도원 — GNSS-R 기반 토양수분 (CYGNSS)"
+열대저기압(태풍·허리케인)이 육지에 상륙한 후에도 약해지지 않거나
+오히려 강해지는 현상. 젖은 토양이 마치 바다처럼 수증기를 공급해서
+발생한다고 알려져 있음.
 
-    **주제 한 줄 요약**
-    : 기존 마이크로파 위성(SMAP, ASCAT, AMSR2)의 토양수분 산출을
-      **GNSS-R 기반 위성(CYGNSS)**이 대체할 수 있을까?
-      성능·공간해상도·시간해상도·관측 가능 지역 측면에서 비교.
+**검색 키워드 예시** (Google Scholar에서 본인이 직접 찾기)
 
-    **검색 키워드 예시 (Google Scholar에서 본인이 직접 찾기)**
+- `brown ocean effect`
+- `tropical cyclone landfall soil moisture`
+- `post-landfall TC intensification`
+- `SMAP tropical cyclone`
 
-    - `CYGNSS soil moisture`
-    - `GNSS-R soil moisture retrieval`
-    - `CYGNSS SMAP comparison`
-    - `passive microwave soil moisture intercomparison`
+</div>
+
+<div class="student-panel" markdown>
+
+<div class="student-header">
+  <div class="student-monogram">이</div>
+  <div class="student-name">
+    <h4>이도원 <span class="student-program">G-SURF</span></h4>
+    <div class="student-topic">GNSS-R 기반 토양수분 (CYGNSS)</div>
+  </div>
+</div>
+
+**주제 한 줄 요약**
+
+기존 마이크로파 위성(SMAP, ASCAT, AMSR2)의 토양수분 산출을
+**GNSS-R 기반 위성(CYGNSS)**이 대체할 수 있을까?
+성능·공간해상도·시간해상도·관측 가능 지역 측면에서 비교.
+
+**검색 키워드 예시** (Google Scholar에서 본인이 직접 찾기)
+
+- `CYGNSS soil moisture`
+- `GNSS-R soil moisture retrieval`
+- `CYGNSS SMAP comparison`
+- `passive microwave soil moisture intercomparison`
+
+</div>
+
+</div>
 
 !!! tip "논문 찾기 → 읽기 전에 꼭 거쳐야 할 단계"
     Google Scholar에서 논문 리스트가 우수수 나옵니다. **무작정 위에서부터
@@ -102,12 +128,17 @@ Below is what to prepare <strong>before our first meeting on Wednesday afternoon
 - :material-tools: **분석 방법(아이디어)** — 어떻게 답할 생각인지 (3줄 이내)
 - :material-help-circle: **모르는 것 / 막힐 것 같은 부분** — 교수님께 물어볼 것
 
-!!! tip "Doc 만드는 법"
-    - Google Drive에서 새 Doc 만들기
-    - 파일명: `(본인 이름) — Summer 2026 Weekly Log`
-    - 공유: 교수님(hyunglok@) **편집자** 권한으로
-    - 첫 페이지에 위 네 항목 작성
-    - 미팅 1시간 전까지 Doc 링크를 교수님께 메일/Slack으로 전송
+!!! tip "Doc 만드는 법 — 연구실 Google Drive 사용"
+    1. **연구실 공유 폴더 접근 권한 요청** — 아래 링크 접속 후 교수님께
+       권한 요청 (Slack 또는 폴더 페이지에서 직접 요청):
+       <https://drive.google.com/drive/folders/1UcmBGLIeBuQFV7Lwoxy0Q5b2XO74MWIe?usp=drive_link>
+    2. 폴더 안에 **본인 이름이 적힌 하위 폴더**가 이미 있습니다 — 그 안에서 작업
+    3. 본인 폴더 안에 새 Google Doc 만들기 — 파일명:
+       `(본인 이름) — Summer 2026 Weekly Log`
+    4. 첫 페이지에 위 네 항목 작성
+    5. 미팅 1시간 전까지 Doc 링크를 교수님께 Slack으로 전송
+
+    공유 폴더 안이라 별도 권한 설정은 안 해도 교수님이 바로 볼 수 있어요.
 
 ### :material-numeric-3-circle-outline: 환경 점검 (30분)
 
