@@ -1,5 +1,7 @@
 # Build output
 site/
+encrypted/
+.staticrypt.json
 
 # Local raw notes and data (kept on Google Drive / Insync only)
 2026_summer/brown_ocean_effect/
