@@ -71,8 +71,12 @@ Below is what to prepare <strong>before our first meeting on Wednesday afternoon
     <a class="kw-chip" href="https://scholar.google.com/scholar?q=CYGNSS+SMAP+comparison" target="_blank" rel="noopener">vs SMAP</a>
     <a class="kw-chip" href="https://scholar.google.com/scholar?q=passive+microwave+soil+moisture+intercomparison" target="_blank" rel="noopener">PMW SM</a>
   </div>
-  <button type="button" class="ws-btn coming-soon" onclick="alert('Workspace coming soon — 곧 공개됩니다.');">
-    Open Workspace
+  <button type="button" class="ws-btn coming-soon" aria-label="Open workspace" title="Workspace (coming soon)" onclick="alert('Workspace coming soon — 곧 공개됩니다.');">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+      <path d="M14 13l3-3-3-3"/>
+      <path d="M17 10H9"/>
+    </svg>
   </button>
 </article>
 
@@ -91,8 +95,12 @@ Below is what to prepare <strong>before our first meeting on Wednesday afternoon
     <a class="kw-chip" href="https://scholar.google.com/scholar?q=post-landfall+TC+intensification" target="_blank" rel="noopener">post-landfall</a>
     <a class="kw-chip" href="https://scholar.google.com/scholar?q=SMAP+tropical+cyclone" target="_blank" rel="noopener">SMAP TC</a>
   </div>
-  <button type="button" class="ws-btn coming-soon" onclick="alert('Workspace coming soon — 곧 공개됩니다.');">
-    Open Workspace
+  <button type="button" class="ws-btn coming-soon" aria-label="Open workspace" title="Workspace (coming soon)" onclick="alert('Workspace coming soon — 곧 공개됩니다.');">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+      <path d="M14 13l3-3-3-3"/>
+      <path d="M17 10H9"/>
+    </svg>
   </button>
 </article>
 
@@ -103,8 +111,12 @@ Below is what to prepare <strong>before our first meeting on Wednesday afternoon
     <h4 class="student-name">김주현</h4>
     <p class="student-topic">주제 미정 — 합류 시 업데이트</p>
   </div>
-  <button type="button" class="ws-btn coming-soon" onclick="alert('Workspace coming soon — 곧 공개됩니다.');">
-    Open Workspace
+  <button type="button" class="ws-btn coming-soon" aria-label="Open workspace" title="Workspace (coming soon)" onclick="alert('Workspace coming soon — 곧 공개됩니다.');">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+      <path d="M14 13l3-3-3-3"/>
+      <path d="M17 10H9"/>
+    </svg>
   </button>
 </article>
 
@@ -115,8 +127,12 @@ Below is what to prepare <strong>before our first meeting on Wednesday afternoon
     <h4 class="student-name">조현</h4>
     <p class="student-topic">주제 미정 — 합류 시 업데이트</p>
   </div>
-  <button type="button" class="ws-btn coming-soon" onclick="alert('Workspace coming soon — 곧 공개됩니다.');">
-    Open Workspace
+  <button type="button" class="ws-btn coming-soon" aria-label="Open workspace" title="Workspace (coming soon)" onclick="alert('Workspace coming soon — 곧 공개됩니다.');">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+      <path d="M14 13l3-3-3-3"/>
+      <path d="M17 10H9"/>
+    </svg>
   </button>
 </article>
 
@@ -127,8 +143,12 @@ Below is what to prepare <strong>before our first meeting on Wednesday afternoon
     <h4 class="student-name">권진</h4>
     <p class="student-topic">주제 미정 — 합류 시 업데이트</p>
   </div>
-  <button type="button" class="ws-btn coming-soon" onclick="alert('Workspace coming soon — 곧 공개됩니다.');">
-    Open Workspace
+  <button type="button" class="ws-btn coming-soon" aria-label="Open workspace" title="Workspace (coming soon)" onclick="alert('Workspace coming soon — 곧 공개됩니다.');">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+      <path d="M14 13l3-3-3-3"/>
+      <path d="M17 10H9"/>
+    </svg>
   </button>
 </article>
 
@@ -139,8 +159,12 @@ Below is what to prepare <strong>before our first meeting on Wednesday afternoon
     <h4 class="student-name">신준영</h4>
     <p class="student-topic">주제 미정 — 합류 시 업데이트</p>
   </div>
-  <button type="button" class="ws-btn coming-soon" onclick="alert('Workspace coming soon — 곧 공개됩니다.');">
-    Open Workspace
+  <button type="button" class="ws-btn coming-soon" aria-label="Open workspace" title="Workspace (coming soon)" onclick="alert('Workspace coming soon — 곧 공개됩니다.');">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+      <path d="M14 13l3-3-3-3"/>
+      <path d="M17 10H9"/>
+    </svg>
   </button>
 </article>
 
@@ -151,8 +175,12 @@ Below is what to prepare <strong>before our first meeting on Wednesday afternoon
     <h4 class="student-name">전하정</h4>
     <p class="student-topic">주제 미정 — 합류 시 업데이트</p>
   </div>
-  <button type="button" class="ws-btn coming-soon" onclick="alert('Workspace coming soon — 곧 공개됩니다.');">
-    Open Workspace
+  <button type="button" class="ws-btn coming-soon" aria-label="Open workspace" title="Workspace (coming soon)" onclick="alert('Workspace coming soon — 곧 공개됩니다.');">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+      <path d="M14 13l3-3-3-3"/>
+      <path d="M17 10H9"/>
+    </svg>
   </button>
 </article>
 
