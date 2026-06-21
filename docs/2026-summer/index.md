@@ -70,10 +70,9 @@ Below is what to prepare <strong>before our first meeting on Wednesday afternoon
     <a class="kw-chip" href="https://scholar.google.com/scholar?q=CYGNSS+SMAP+comparison" target="_blank" rel="noopener">CYGNSS vs SMAP</a>
     <a class="kw-chip" href="https://scholar.google.com/scholar?q=passive+microwave+soil+moisture+intercomparison" target="_blank" rel="noopener">PMW intercomparison</a>
   </div>
-  <a class="ws-btn coming-soon" href="#" onclick="event.preventDefault(); alert('Workspace coming soon — 곧 공개됩니다.');">
-    <span class="ws-label">Workspace</span>
-    <span class="ws-status">Soon</span>
-  </a>
+  <button type="button" class="ws-btn coming-soon" onclick="alert('Workspace coming soon — 곧 공개됩니다.');">
+    Open Workspace
+  </button>
 </article>
 
 <article class="student-card">
@@ -90,10 +89,9 @@ Below is what to prepare <strong>before our first meeting on Wednesday afternoon
     <a class="kw-chip" href="https://scholar.google.com/scholar?q=post-landfall+TC+intensification" target="_blank" rel="noopener">post-landfall TC</a>
     <a class="kw-chip" href="https://scholar.google.com/scholar?q=SMAP+tropical+cyclone" target="_blank" rel="noopener">SMAP TC</a>
   </div>
-  <a class="ws-btn coming-soon" href="#" onclick="event.preventDefault(); alert('Workspace coming soon — 곧 공개됩니다.');">
-    <span class="ws-label">Workspace</span>
-    <span class="ws-status">Soon</span>
-  </a>
+  <button type="button" class="ws-btn coming-soon" onclick="alert('Workspace coming soon — 곧 공개됩니다.');">
+    Open Workspace
+  </button>
 </article>
 
 <article class="student-card placeholder">
@@ -103,10 +101,9 @@ Below is what to prepare <strong>before our first meeting on Wednesday afternoon
     <h4 class="student-name">김주현</h4>
     <p class="student-topic">주제 미정 — 합류 시 업데이트</p>
   </div>
-  <a class="ws-btn coming-soon" href="#" onclick="event.preventDefault(); alert('Workspace coming soon — 곧 공개됩니다.');">
-    <span class="ws-label">Workspace</span>
-    <span class="ws-status">Soon</span>
-  </a>
+  <button type="button" class="ws-btn coming-soon" onclick="alert('Workspace coming soon — 곧 공개됩니다.');">
+    Open Workspace
+  </button>
 </article>
 
 <article class="student-card placeholder">
@@ -116,10 +113,9 @@ Below is what to prepare <strong>before our first meeting on Wednesday afternoon
     <h4 class="student-name">조현</h4>
     <p class="student-topic">주제 미정 — 합류 시 업데이트</p>
   </div>
-  <a class="ws-btn coming-soon" href="#" onclick="event.preventDefault(); alert('Workspace coming soon — 곧 공개됩니다.');">
-    <span class="ws-label">Workspace</span>
-    <span class="ws-status">Soon</span>
-  </a>
+  <button type="button" class="ws-btn coming-soon" onclick="alert('Workspace coming soon — 곧 공개됩니다.');">
+    Open Workspace
+  </button>
 </article>
 
 <article class="student-card placeholder">
@@ -129,10 +125,9 @@ Below is what to prepare <strong>before our first meeting on Wednesday afternoon
     <h4 class="student-name">권진</h4>
     <p class="student-topic">주제 미정 — 합류 시 업데이트</p>
   </div>
-  <a class="ws-btn coming-soon" href="#" onclick="event.preventDefault(); alert('Workspace coming soon — 곧 공개됩니다.');">
-    <span class="ws-label">Workspace</span>
-    <span class="ws-status">Soon</span>
-  </a>
+  <button type="button" class="ws-btn coming-soon" onclick="alert('Workspace coming soon — 곧 공개됩니다.');">
+    Open Workspace
+  </button>
 </article>
 
 <article class="student-card placeholder">
@@ -142,10 +137,9 @@ Below is what to prepare <strong>before our first meeting on Wednesday afternoon
     <h4 class="student-name">신준영</h4>
     <p class="student-topic">주제 미정 — 합류 시 업데이트</p>
   </div>
-  <a class="ws-btn coming-soon" href="#" onclick="event.preventDefault(); alert('Workspace coming soon — 곧 공개됩니다.');">
-    <span class="ws-label">Workspace</span>
-    <span class="ws-status">Soon</span>
-  </a>
+  <button type="button" class="ws-btn coming-soon" onclick="alert('Workspace coming soon — 곧 공개됩니다.');">
+    Open Workspace
+  </button>
 </article>
 
 <article class="student-card placeholder">
@@ -155,15 +149,13 @@ Below is what to prepare <strong>before our first meeting on Wednesday afternoon
     <h4 class="student-name">전하정</h4>
     <p class="student-topic">주제 미정 — 합류 시 업데이트</p>
   </div>
-  <a class="ws-btn coming-soon" href="#" onclick="event.preventDefault(); alert('Workspace coming soon — 곧 공개됩니다.');">
-    <span class="ws-label">Workspace</span>
-    <span class="ws-status">Soon</span>
-  </a>
+  <button type="button" class="ws-btn coming-soon" onclick="alert('Workspace coming soon — 곧 공개됩니다.');">
+    Open Workspace
+  </button>
 </article>
 
 </div>
 
-<p class="student-note">사진을 추가하려면 <code>docs/assets/students/</code>에 위 카드 순서대로 <code>(이름).jpg</code> 파일을 넣으세요. 없으면 자동으로 이니셜이 보입니다.</p>
 
 !!! tip "논문 찾기 → 읽기 전에 꼭 거쳐야 할 단계"
     Google Scholar에서 논문 리스트가 우수수 나옵니다. **무작정 위에서부터
