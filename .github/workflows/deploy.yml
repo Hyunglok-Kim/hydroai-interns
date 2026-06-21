@@ -26,13 +26,48 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install dependencies
+      - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
           pip install mkdocs-material
 
+      - name: Set up Node (for StatiCrypt)
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install StatiCrypt
+        run: npm install -g staticrypt
+
       - name: Build site
         run: mkdocs build --strict
+
+      # Password-protect /2026-summer/ (and anything under it).
+      # Set the actual password in GitHub: Settings → Secrets and variables
+      # → Actions → New repository secret → name: STATICRYPT_PASSWORD
+      - name: Encrypt protected pages
+        env:
+          STATICRYPT_PASSWORD: ${{ secrets.STATICRYPT_PASSWORD }}
+        run: |
+          if [ -z "$STATICRYPT_PASSWORD" ]; then
+            echo "::warning::STATICRYPT_PASSWORD secret not set. Falling back to default 'hydroai2026'. Set the secret in GitHub repo settings to change it."
+            STATICRYPT_PASSWORD="hydroai2026"
+          fi
+          staticrypt \
+            --recursive \
+            --short \
+            --remember 30 \
+            --template-title "HydroAI Lab · Protected" \
+            --template-instructions "이 페이지는 비밀번호로 보호되어 있습니다. 비밀번호를 모르시면 교수님께 문의해 주세요." \
+            --template-button "Unlock" \
+            --template-color-primary "#c8102e" \
+            --template-color-secondary "#1c1f24" \
+            -p "$STATICRYPT_PASSWORD" \
+            "site/2026-summer/"
+          # StatiCrypt strips the leading "site/" — output lands at ./encrypted/2026-summer/.
+          # Overlay the encrypted versions back over the originals in ./site/.
+          rsync -av encrypted/2026-summer/ site/2026-summer/
+          rm -rf encrypted
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

@@ -8,6 +8,7 @@ use_directory_urls: true
 
 theme:
   name: material
+  custom_dir: overrides
   logo: assets/hydroai.png
   favicon: assets/hydroai.png
   font:

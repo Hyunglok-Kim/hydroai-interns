@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {# Discourage search engines from indexing this site. The protected
+     pages are encrypted at the wrapper level, but noindex on every page
+     adds belt-and-suspenders defense against accidental discovery. #}
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+{% endblock %}
