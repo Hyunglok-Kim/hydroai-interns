@@ -23,14 +23,6 @@
   --md-typeset-a-color:          #1c1f24;
 }
 
-[data-md-color-scheme="slate"] {
-  --md-default-bg-color:         #14171c;
-  --md-default-fg-color:         #f0f1f3;
-  --md-default-fg-color--light:  #c4c9d2;
-  --md-accent-fg-color:          #e9314a;
-  --md-typeset-a-color:          #ffffff;
-}
-
 /* Typography refinements */
 .md-typeset {
   font-feature-settings: "ss01", "cv02", "cv11";
