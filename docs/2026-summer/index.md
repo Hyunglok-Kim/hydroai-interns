@@ -64,7 +64,6 @@ Below is what to prepare <strong>before our first meeting on Wednesday afternoon
     <p class="student-topic">GNSS-R 기반 토양수분 (CYGNSS)</p>
   </div>
   <p class="student-summary">SMAP·ASCAT·AMSR2의 토양수분 산출을 GNSS-R 위성(CYGNSS)이 대체할 수 있는가.</p>
-  <div class="kw-label">검색 (Google Scholar)</div>
   <div class="kw-list">
     <a class="kw-chip" href="https://scholar.google.com/scholar?q=CYGNSS+soil+moisture" target="_blank" rel="noopener">CYGNSS SM</a>
     <a class="kw-chip" href="https://scholar.google.com/scholar?q=GNSS-R+soil+moisture+retrieval" target="_blank" rel="noopener">GNSS-R</a>
@@ -88,7 +87,6 @@ Below is what to prepare <strong>before our first meeting on Wednesday afternoon
     <p class="student-topic">Brown Ocean Effect</p>
   </div>
   <p class="student-summary">열대저기압이 상륙 후에도 약해지지 않는 현상 — 젖은 토양의 역할.</p>
-  <div class="kw-label">검색 (Google Scholar)</div>
   <div class="kw-list">
     <a class="kw-chip" href="https://scholar.google.com/scholar?q=brown+ocean+effect" target="_blank" rel="noopener">brown ocean</a>
     <a class="kw-chip" href="https://scholar.google.com/scholar?q=tropical+cyclone+landfall+soil+moisture" target="_blank" rel="noopener">TC × SM</a>
