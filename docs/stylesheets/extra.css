@@ -74,6 +74,31 @@
   color: var(--md-default-fg-color);
 }
 
+/* Logo — wide aspect ratio (1022x192 ≈ 5.3:1), keep proportional.
+   Material's default forces it into a square box and clips it. */
+.md-header__button.md-logo {
+  margin: 0.3rem 0.4rem;
+  padding: 0;
+  width: auto;
+  height: auto;
+}
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  width: auto;
+  height: 1.8rem;
+  max-height: 1.8rem;
+  display: block;
+  /* The black PNG logo reads cleanly on the warm paper header */
+  opacity: 0.92;
+}
+.md-header__button.md-logo:hover img {
+  opacity: 1;
+}
+/* Give the title a touch more breathing room beside the wider logo */
+.md-header__title {
+  margin-left: 0.4rem;
+}
+
 /* ============================================================
    HERO — paper background, deep slate ink, crimson accent
    ============================================================ */
