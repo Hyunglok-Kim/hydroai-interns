@@ -1,0 +1,383 @@
+/* HydroAI Lab — SpaceX / Tesla inspired light theme
+   ---------------------------------------------------
+   Design principles:
+   - Pure white background, near-black text. Huge breathing room.
+   - Display-weight headlines (very thin + very large) for hero
+   - Sharp, rectangular components (no soft rounded blobs)
+   - Single accent color: a refined red (#E31937 Tesla-esque)
+   - Minimal decoration; let typography and whitespace do the work
+*/
+
+:root {
+  --md-primary-fg-color:         #ffffff;
+  --md-primary-fg-color--light:  #f5f5f7;
+  --md-primary-fg-color--dark:   #0a0a0a;
+  --md-primary-bg-color:         #0a0a0a;       /* text on primary bg */
+  --md-accent-fg-color:          #E31937;       /* Tesla / SpaceX red */
+  --md-default-bg-color:         #ffffff;
+  --md-default-fg-color:         #0a0a0a;
+  --md-default-fg-color--light:  #404145;
+  --md-default-fg-color--lighter:#8a8d93;
+  --md-typeset-a-color:          #0a0a0a;
+}
+
+/* Subtle dark-mode parity if a student flips it */
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color:         #0a0a0a;
+  --md-default-fg-color:         #f5f5f7;
+  --md-default-fg-color--light:  #c9ccd3;
+  --md-accent-fg-color:          #E31937;
+  --md-typeset-a-color:          #ffffff;
+}
+
+/* Tighten Material's defaults */
+.md-typeset {
+  font-feature-settings: "ss01", "cv02", "cv11";
+  font-size: 0.78rem;
+}
+.md-typeset h1 {
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  color: var(--md-default-fg-color);
+}
+.md-typeset h2 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-top: 3rem;
+  font-size: 1.6rem;
+}
+.md-typeset h3 {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* Make the top header a clean, minimal bar */
+.md-header {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  color: #0a0a0a;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+}
+.md-header__title {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: #0a0a0a;
+}
+.md-header__topic {
+  font-size: 0.85rem;
+}
+.md-header[data-md-state="shadow"] {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+}
+.md-header .md-search__input {
+  background: rgba(0, 0, 0, 0.04);
+  color: #0a0a0a;
+}
+
+/* ============================================================
+   HERO — full-bleed, display-weight, SpaceX/Tesla feel
+   ============================================================ */
+.hydroai-hero {
+  position: relative;
+  margin: -1.5rem -1.5rem 4rem -1.5rem;
+  padding: 7rem 2.5rem 6rem;
+  text-align: center;
+  background:
+    radial-gradient(ellipse 80% 50% at 50% 0%, rgba(227, 25, 55, 0.06), transparent 70%),
+    radial-gradient(ellipse 60% 80% at 50% 100%, rgba(10, 10, 10, 0.04), transparent 60%),
+    linear-gradient(180deg, #ffffff 0%, #f5f5f7 100%);
+  color: #0a0a0a;
+  overflow: hidden;
+  isolation: isolate;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* Thin lat/lon-style grid lines, very subtle */
+.hydroai-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(10, 10, 10, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(10, 10, 10, 0.035) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+  z-index: -1;
+}
+
+.hydroai-hero h1 {
+  margin: 0 0 1.2rem;
+  font-size: clamp(2.4rem, 5.5vw, 4.5rem);
+  font-weight: 200;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  color: #0a0a0a;
+}
+
+/* Last word of headline — make it bold/red Tesla-style.
+   Apply via <span class="accent"> in the markdown. */
+.hydroai-hero h1 .accent {
+  font-weight: 600;
+  color: var(--md-accent-fg-color);
+}
+
+.hydroai-hero p.lede {
+  max-width: 680px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: #404145;
+  font-weight: 400;
+}
+
+.hydroai-hero .tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.45rem;
+  margin-top: 2.5rem;
+}
+
+.hydroai-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 500;
+  background: transparent;
+  color: #0a0a0a;
+  border: 1px solid rgba(10, 10, 10, 0.18);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: all 0.18s ease;
+}
+.hydroai-tag:hover {
+  border-color: var(--md-accent-fg-color);
+  color: var(--md-accent-fg-color);
+}
+
+/* Eyebrow text above hero title — small caps red */
+.hydroai-hero .eyebrow {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--md-accent-fg-color);
+  margin-bottom: 1.2rem;
+}
+
+/* ============================================================
+   STAT STRIP — minimal, all-caps, sharp dividers
+   ============================================================ */
+.hydroai-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0;
+  margin: 2.5rem 0 3rem;
+  border-top: 1px solid rgba(10, 10, 10, 0.08);
+  border-bottom: 1px solid rgba(10, 10, 10, 0.08);
+}
+
+.hydroai-stat {
+  padding: 1.5rem 1.2rem;
+  text-align: left;
+  border-right: 1px solid rgba(10, 10, 10, 0.08);
+  background: transparent;
+}
+.hydroai-stat:last-child { border-right: none; }
+
+.hydroai-stat .num {
+  display: block;
+  font-size: 2.2rem;
+  font-weight: 200;
+  color: #0a0a0a;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.hydroai-stat .label {
+  display: block;
+  margin-top: 0.7rem;
+  font-size: 0.7rem;
+  color: #8a8d93;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 500;
+}
+
+/* ============================================================
+   CARDS — sharp, almost no border-radius, hairline borders
+   ============================================================ */
+.hydroai-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0 3rem;
+}
+
+.hydroai-card {
+  display: block;
+  padding: 1.8rem 1.6rem 1.6rem;
+  border-radius: 4px;
+  background: #ffffff;
+  border: 1px solid rgba(10, 10, 10, 0.10);
+  text-decoration: none !important;
+  color: inherit;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hydroai-card:hover {
+  transform: translateY(-2px);
+  border-color: #0a0a0a;
+  box-shadow: 0 12px 32px -16px rgba(10, 10, 10, 0.25);
+}
+
+.hydroai-card .topic {
+  font-size: 0.66rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--md-accent-fg-color);
+  font-weight: 600;
+}
+
+.hydroai-card h3 {
+  margin: 0.6rem 0 0.6rem;
+  font-size: 1.2rem;
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.hydroai-card p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #404145;
+  line-height: 1.55;
+}
+
+.hydroai-card .meta {
+  margin-top: 1.2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(10, 10, 10, 0.08);
+  font-size: 0.72rem;
+  color: #8a8d93;
+  display: flex;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.hydroai-card.tbd {
+  border-style: dashed;
+  opacity: 0.55;
+  background: transparent;
+}
+
+/* ============================================================
+   Tables — minimal, Tesla-spec-sheet feel
+   ============================================================ */
+.md-typeset table:not([class]) {
+  border: none;
+  font-size: 0.78rem;
+}
+.md-typeset table:not([class]) th {
+  background: transparent;
+  color: #0a0a0a;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.7rem;
+  border-bottom: 2px solid #0a0a0a;
+  padding: 0.9rem 1rem;
+}
+.md-typeset table:not([class]) td {
+  border-bottom: 1px solid rgba(10, 10, 10, 0.08);
+  padding: 0.9rem 1rem;
+}
+
+/* ============================================================
+   Buttons — Tesla CTA style (filled black pill)
+   ============================================================ */
+.md-typeset .md-button {
+  border-radius: 999px;
+  padding: 0.7rem 1.8rem;
+  font-weight: 500;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border: 1px solid #0a0a0a;
+  color: #0a0a0a;
+  transition: all 0.18s ease;
+}
+.md-typeset .md-button:hover {
+  background: #0a0a0a;
+  color: #ffffff;
+  border-color: #0a0a0a;
+}
+.md-typeset .md-button--primary {
+  background: #0a0a0a;
+  color: #ffffff;
+  border-color: #0a0a0a;
+}
+.md-typeset .md-button--primary:hover {
+  background: var(--md-accent-fg-color);
+  border-color: var(--md-accent-fg-color);
+  color: #ffffff;
+}
+
+/* ============================================================
+   Admonitions — flatter, sharper
+   ============================================================ */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 4px;
+  border-left-width: 3px;
+  font-size: 0.78rem;
+  box-shadow: none;
+  border: 1px solid rgba(10, 10, 10, 0.08);
+  border-left-width: 3px;
+}
+
+/* Progress bar — clean black */
+.hydroai-bar {
+  position: relative;
+  height: 4px;
+  width: 100%;
+  background: rgba(10, 10, 10, 0.08);
+  border-radius: 0;
+  overflow: hidden;
+}
+.hydroai-bar > span {
+  display: block;
+  height: 100%;
+  background: #0a0a0a;
+}
+
+/* Tabbed code blocks — squarer */
+.md-typeset .tabbed-set {
+  border-radius: 4px;
+}
+.md-typeset .tabbed-labels > label {
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.72rem;
+}
+
+/* Footer — minimalist */
+.md-footer {
+  background: #ffffff;
+  color: #8a8d93;
+  border-top: 1px solid rgba(10, 10, 10, 0.08);
+}
+.md-footer-meta {
+  background: #ffffff;
+  color: #8a8d93;
+}
+.md-footer-meta__inner {
+  font-size: 0.72rem;
+}

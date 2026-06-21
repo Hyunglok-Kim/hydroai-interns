@@ -1,0 +1,114 @@
+site_name: HydroAI Lab · Internship Archive
+site_description: HydroAI Lab intern projects — AI and satellite remote sensing for the water cycle. Based at GIST.
+site_author: HydroAI Lab
+copyright: Copyright &copy; HydroAI Lab — GIST (Gwangju Institute of Science and Technology)
+
+docs_dir: docs
+use_directory_urls: true
+
+theme:
+  name: material
+  logo: assets/hydroai.png
+  favicon: assets/hydroai.png
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.tracking
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: red
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: red
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+    admonition:
+      note: material/satellite-variant
+      abstract: material/brain
+      info: material/water
+      tip: material/lightbulb-on
+      success: material/check-decagram
+      question: material/help-circle
+      warning: material/alert
+      failure: material/close-octagon
+      danger: material/skull
+      bug: material/bug
+      example: material/flask
+      quote: material/format-quote-close
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.caret
+
+plugins:
+  - search
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/solid/globe
+      link: https://www.gist.ac.kr
+      name: GIST (Gwangju Institute of Science and Technology)
+    - icon: fontawesome/solid/satellite
+      link: https://www.nasa.gov/smap
+      name: SMAP mission
+
+nav:
+  - Home: index.md
+  - Summer 2026: 2026-summer/index.md
+
+not_in_nav: |
+  2026-summer/schedule.md
+  2026-summer/pi-dashboard.md
+  2026-summer/students/
+  2026-summer/resources/

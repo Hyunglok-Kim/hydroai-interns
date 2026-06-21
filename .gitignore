@@ -1,0 +1,28 @@
+# Build output
+site/
+
+# Local raw notes and data (kept on Google Drive / Insync only)
+2026_summer/brown_ocean_effect/
+2026_summer/soil_moisture_data_intercomparison/
+*_summer/brown_ocean_effect/
+*_summer/soil_moisture_data_intercomparison/
+*_summer/*_data/
+*_summer/*_raw/
+
+# Loose images that aren't site assets (keep logos by copying into docs/assets/)
+2026_summer/*.png
+2026_summer/*.jpg
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
