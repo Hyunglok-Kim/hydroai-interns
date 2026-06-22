@@ -11,7 +11,7 @@ A single view to skim the cohort before Monday stand-up.
 
 | Intern | Project | Week | Weekly log | Progress | Status |
 |--------|---------|------|------------|----------|--------|
-| **Changik Park** | Brown Ocean Effect | 1 | [:material-google-drive: Open Doc](https://docs.google.com/document/d/REPLACE_WITH_CHANGIK_DOC_ID/edit) | <div class="hydroai-bar"><span style="width:5%"></span></div> | :material-circle: not started |
+| **Chanik Park** | Brown Ocean Effect | 1 | [:material-google-drive: Open Doc](https://docs.google.com/document/d/REPLACE_WITH_CHANIK_DOC_ID/edit) | <div class="hydroai-bar"><span style="width:5%"></span></div> | :material-circle: not started |
 | **Dowon Lee** | Soil Moisture Data Intercomparison | 1 | [:material-google-drive: Open Doc](https://docs.google.com/document/d/REPLACE_WITH_DOWON_DOC_ID/edit) | <div class="hydroai-bar"><span style="width:5%"></span></div> | :material-circle: not started |
 | _TBD intern 3_ | — | — | — | — | :material-seed: not yet onboarded |
 | _TBD intern 4_ | — | — | — | — | :material-seed: not yet onboarded |
@@ -20,7 +20,7 @@ A single view to skim the cohort before Monday stand-up.
 
 ## :material-calendar-check: Upcoming deliverables
 
-- **Fri Jun 26** — Topic kickoff talks (Changik, Dowon) · 10 min each
+- **Fri Jun 26** — Topic kickoff talks (Chanik, Dowon) · 10 min each
 - **Fri Jul 17** — Mid-summer checkpoint talks
 - **Fri Aug 14** — Dress rehearsals
 - **Fri Aug 21** — Final symposium · 15 min talks

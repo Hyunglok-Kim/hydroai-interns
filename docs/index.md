@@ -49,7 +49,7 @@ their projects, weekly logs, and final presentations, kept in one place.
   <div class="cohort-card__programs">
     <div class="cohort-program">
       <span class="cohort-program__tag gsurf">G-SURF</span>
-      <span class="cohort-program__people">박창익 · 이도원</span>
+      <span class="cohort-program__people">박찬익 · 이도원</span>
     </div>
     <div class="cohort-program">
       <span class="cohort-program__tag intern">GIST Summer Intern</span>

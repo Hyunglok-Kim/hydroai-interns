@@ -12,7 +12,7 @@ hide:
 
 <p class="lede">
 Welcome to the kickoff page for our <strong>G-SURF 2026</strong> interns —
-<strong>Changik Park</strong> and <strong>Dowon Lee</strong>.
+<strong>Chanik Park</strong> and <strong>Dowon Lee</strong>.
 (Five more members will join later this summer through the
 <strong>GIST Summer Internship</strong> program and new-student onboarding,
 on rolling start dates.)
@@ -80,10 +80,10 @@ Below is what to prepare <strong>before our first meeting on Wednesday afternoon
 </article>
 
 <article class="student-card">
-  <div class="student-photo" style="background-image: url('../assets/students/changik-park.jpg')" data-initial="박"></div>
+  <div class="student-photo" style="background-image: url('../assets/students/chanik-park.jpg')" data-initial="박"></div>
   <div class="student-meta">
     <span class="student-program">G-SURF</span>
-    <h4 class="student-name">박창익</h4>
+    <h4 class="student-name">박찬익</h4>
     <p class="student-topic">Brown Ocean Effect</p>
   </div>
   <p class="student-summary">열대저기압이 상륙 후에도 약해지지 않는 현상 — 젖은 토양의 역할.</p>
@@ -228,7 +228,7 @@ Below is what to prepare <strong>before our first meeting on Wednesday afternoon
 
 - 본인 노트북에 **Python 3 + Jupyter** 설치돼 있는지 확인
 - **Google Earth Engine** 계정 만들기 — <https://earthengine.google.com/> (승인에 며칠 걸릴 수 있음, **오늘 신청**)
-- **연구실 Slack 가입** — 박창익: 교수님께 초대 요청 / 이도원: 이미 가입 완료
+- **연구실 Slack 가입** — 박찬익: 교수님께 초대 요청 / 이도원: 이미 가입 완료
 
 ---
 

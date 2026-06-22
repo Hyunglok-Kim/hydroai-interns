@@ -10,9 +10,9 @@ cohort members will join on rolling start dates later in the summer.
 
 <div class="hydroai-grid" markdown>
 
-<a class="hydroai-card" href="changik-park/">
+<a class="hydroai-card" href="chanik-park/">
   <div class="topic">:material-weather-pouring: Land–atmosphere coupling</div>
-  <h3>Changik Park</h3>
+  <h3>Chanik Park</h3>
   <p><strong>Brown Ocean Effect</strong> — how wet soils sustain tropical cyclones
   after landfall.</p>
   <div class="meta">

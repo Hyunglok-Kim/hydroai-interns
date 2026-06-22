@@ -14,7 +14,7 @@ don't make new docs every week.
 ## :material-numeric-2-circle: Suggested doc structure
 
 ```
-Title: Changik Park — Brown Ocean Effect — Summer 2026 Weekly Log
+Title: Chanik Park — Brown Ocean Effect — Summer 2026 Weekly Log
 
 [Research question]   ← refined in week 1
 [Plan]                ← refined in week 1

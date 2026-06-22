@@ -1,4 +1,4 @@
-# Changik Park
+# Chanik Park
 
 !!! abstract "Project — Brown Ocean Effect"
     How and when do wet land surfaces sustain — or even re-intensify —
@@ -9,7 +9,7 @@
 
 ## :material-file-document-edit-outline: My weekly log (Google Docs)
 
-[:material-google-drive: **Open my weekly log →**](https://docs.google.com/document/d/REPLACE_WITH_CHANGIK_DOC_ID/edit){ .md-button .md-button--primary }
+[:material-google-drive: **Open my weekly log →**](https://docs.google.com/document/d/REPLACE_WITH_CHANIK_DOC_ID/edit){ .md-button .md-button--primary }
 
 > The PI leaves comments directly inside the Doc. Use Google Docs'
 > **Suggesting** mode or `@mention` for questions.

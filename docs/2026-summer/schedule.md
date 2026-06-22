@@ -1,7 +1,7 @@
 # Schedule
 
 The 9-week arc for the **Jun 22 – Aug 21, 2026** cohort
-(Changik Park · Dowon Lee). Other interns will plug in on their own dates.
+(Chanik Park · Dowon Lee). Other interns will plug in on their own dates.
 
 ## :material-flag: At a glance
 
